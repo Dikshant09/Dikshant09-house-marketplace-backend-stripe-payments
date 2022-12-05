@@ -1,8 +1,13 @@
-# Accepting a payment
+# House Marketplace Backend : Stripe API
+- It’s a real estate E-commerce website to buy and sell houses. 
+- Here one can add, edit, delete and post a listing in real-time. 
+- React is used as Frontend and Firebase as Backend. 
+- Using Google Geocoding API to get Coordinates for map plotting
+- Stripe API is used to handle payments. 
 
-An [Express server](http://expressjs.com) implementation
-
-You can [🎥 watch a video](https://youtu.be/WG4ehXSEpz4) to see how this server was implemented and [read the transcripts](./TRANSCRIPTS.md).
+<b>Frontend : </b>
+- [Frontend Repo](https://github.com/Dikshant09/house-marketplace) 
+- [Live Link](https://house-marketplace-bay.vercel.app/)
 
 ## Requirements
 
