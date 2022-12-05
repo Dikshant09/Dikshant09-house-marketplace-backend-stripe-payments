@@ -20,9 +20,11 @@ Ensure the API keys are configured in `.env` in this directory. It should includ
 STRIPE_PRIVATE_KEY = sk_test...
 
 # Path to front-end implementation. 
-CLIENT_URL = "https://frontend_app_url.com"
-```
+FRONT_END_URL = "https://frontend_app_url.com"
 
+# Payment Path
+CLIENT_PAYMENT_URL = "https://frontend_app_url.com/payment"
+```
 2. Install dependencies and start the server
 
 ```
