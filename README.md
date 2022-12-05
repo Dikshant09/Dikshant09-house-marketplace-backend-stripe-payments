@@ -8,6 +8,7 @@ You can [🎥 watch a video](https://youtu.be/WG4ehXSEpz4) to see how this serve
 
 - Node v10+
 - Configured .env file
+- Stripe Account
 
 ## How to run
 
