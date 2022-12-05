@@ -1,4 +1,4 @@
-require("dotenv").config()
+const dotenv = require("dotenv").config()
 
 const express = require("express")
 
@@ -9,7 +9,8 @@ app.use(
   cors({
     // origin: "http://localhost:5500",
     // origin: "http://localhost:3000",
-    origin: "https://house-marketplace-bay.vercel.app/",
+    // origin: "https://house-marketplace-bay.vercel.app/",
+    origin: process.env.FRONT_END_URL
   })
 )
 
@@ -34,8 +35,8 @@ app.post("/create-checkout-session", async (req, res) => {
           quantity: item.quantity,
         }
       }),
-      success_url: `${process.env.CLIENT_URL}${req.body.items[0].id}/successful`,
-      cancel_url: `${process.env.CLIENT_URL}${req.body.items[0].id}/failed`,
+      success_url: `${process.env.CLIENT_PAYMENT_URL}${req.body.items[0].id}/successful`,
+      cancel_url: `${process.env.CLIENT_PAYMENT_URL}${req.body.items[0].id}/failed`,
     });
     res.json({ url: session.url })
   } catch (e) {
